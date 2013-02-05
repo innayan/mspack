@@ -41,7 +41,7 @@
 </target>
 
 <target name="run-tests" depends="compile" description="run your test suite" >
-    <junit showoutput="true" haltonfailure="no" printsummary="withOutAndErr">
+    <junit showoutput="true" haltonfailure="true" printsummary="withOutAndErr">
     <classpath>
     <pathelement path="${build}"/>
      </classpath> <batchtest todir="${reports}/raw/" fork="yes">
